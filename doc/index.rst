@@ -10,6 +10,7 @@ Basics
 .. toctree::
    :maxdepth: 2
 
+   steps-needed.rst
    purpose.rst
    dependencies.rst
    usage.rst
