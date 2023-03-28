@@ -10,9 +10,13 @@ Basics
 .. toctree::
    :maxdepth: 2
 
+   learning.rst
    steps-needed.rst
    purpose.rst
    dependencies.rst
    usage.rst
    credit.rst
    exercises.rst
+   myfile.md
+   specifications.md
+   learn_myst.md

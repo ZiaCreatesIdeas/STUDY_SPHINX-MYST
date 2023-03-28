@@ -31,10 +31,20 @@ sys.path.insert(0, os.path.abspath('../source'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autodoc',
-              'sphinx_copybutton'
-              ]
 
+# myst-parser, tells myst to recognize H1..H3 headings.
+# which can be referenced by: [](#my-heading)
+myst_heading_anchors = 4
+
+extensions = ['sphinx.ext.autodoc',
+              'sphinx_copybutton',
+              'sphinx.ext.autosectionlabel',
+              'myst_parser'
+                            ]
+
+myst_enable_extensions = [
+  "colon_fence",
+]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
