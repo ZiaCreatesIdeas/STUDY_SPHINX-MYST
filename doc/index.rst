@@ -12,7 +12,7 @@ Basics
 
    learning.rst
    steps-needed.rst
-   purpose.rst
+   resources.md
    dependencies.rst
    usage.rst
    credit.rst

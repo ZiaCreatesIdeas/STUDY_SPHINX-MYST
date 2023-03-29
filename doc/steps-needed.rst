@@ -33,6 +33,15 @@ To deploy this guide from `coderrefinery <https://coderefinery.github.io/documen
 
 .. In essence these will act as subsections.
 
+Build
+~~~~~
+
+This is the command to build using Coderefinery.
+
+.. code-block:: python
+
+   sphinx-build doc _build
+
 
 **Test HTML pages links**
 
