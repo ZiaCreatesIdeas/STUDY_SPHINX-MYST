@@ -146,7 +146,7 @@ We can flop an image using:
 
 ---
 
-#### Admonition
+#### Admonition!
 
 Here is how to add Admonition.
 
@@ -182,7 +182,7 @@ This is the *content*
 </div>
 
 
-#### Note
+#### Note!
 
 Here is how to add a Note.
 
@@ -257,8 +257,6 @@ Clicking on the [link will take us to the Note Header](Note)
 
  Another page [next page](credit.rst) 
  
-#### This IS ANOTHER HEADING{notoc}
-with some text.
  
 #### Multiple Size Headings
 These are examples of different size headings.
