@@ -162,6 +162,26 @@ Here is how to add Admonition.
 Here's my admonition content
 ```
 
+[Admonition vis Code Fence (Myst)](https://myst-parser.readthedocs.io/en/v0.17.1/syntax/optional.html#syntax-header-anchors)
+
+    ::::{important}
+    :::{note}
+    This text is **standard** _Markdown_
+    :::
+    :::: 
+
+::::{important}
+:::{note}
+This text is **standard** _Markdown_
+:::
+::::
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title">This is the **title**</p>
+This is the *content*
+</div>
+
+
 #### Note
 
 Here is how to add a Note.
@@ -237,6 +257,9 @@ Clicking on the [link will take us to the Note Header](Note)
 
  Another page [next page](credit.rst) 
  
+#### This IS ANOTHER HEADING{notoc}
+with some text.
+ 
 #### Multiple Size Headings
 These are examples of different size headings.
 
@@ -253,6 +276,8 @@ These are examples of different size headings.
 ##### Heading 5
 
 ###### Heading 6
+
+
 
 
 

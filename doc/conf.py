@@ -40,10 +40,12 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx_copybutton',
               'sphinx.ext.autosectionlabel',
               'myst_parser'
+
                             ]
 
 myst_enable_extensions = [
   "colon_fence",
+
 ]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
