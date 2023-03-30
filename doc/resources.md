@@ -39,3 +39,6 @@ This is a list of helpful tutorials.
 
 ##### Customization
 **How to** [customize Sphinx-rtd-theme](https://docs.readthedocs.io/en/stable/guides/adding-custom-css.html)
+
+**Add Cards and Grids**
+[Cards via Sphinx-designs](https://sphinx-design.readthedocs.io/en/furo-theme/get_started.html#)

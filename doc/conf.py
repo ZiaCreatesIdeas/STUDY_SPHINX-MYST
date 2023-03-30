@@ -39,7 +39,8 @@ myst_heading_anchors = 4
 extensions = ['sphinx.ext.autodoc',
               'sphinx_copybutton',
               'sphinx.ext.autosectionlabel',
-              'myst_parser'
+              'myst_parser',
+              'sphinx_design'
 
                             ]
 
