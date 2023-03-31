@@ -31,6 +31,17 @@ To deploy this guide from `coderrefinery <https://coderefinery.github.io/documen
 
 ####
 
+Add a Dependency List of Extensions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| When installing packages, we should add a document called 'requirements.txt'
+| to the root level, same as conf.py.
+| It should include a single line naming the dependency.
+
+.. image:: ./_static/add_requirements.png
+
+####
+
 .. In essence these will act as subsections.
 
 Build
