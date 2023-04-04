@@ -9,7 +9,7 @@ Installation
 
 To deploy this guide from `coderrefinery <https://coderefinery.github.io/documentation/gh_workflow/>`_ , follow these steps...
 
-1. Install support packages from terminal.
+**1. Install support packages from terminal.**
 
 .. code-block:: python
 
@@ -26,14 +26,14 @@ To deploy this guide from `coderrefinery <https://coderefinery.github.io/documen
 | - Sphinx_design allow for use of grids and cards in a document.
 | - Myst_NB allows for integration of Jupyter Notebook `Myst-nb <https://myst-nb.readthedocs.io/en/v0.9.0/use/start.html>`_
 
-| 2. Modify **CONF.PY**
+| **2.** Modify **CONF.PY**
 |     2a. After generating the template, in Conf.py, set the language.
 
 .. code-block:: python
 
    language = en
 
-|     2b. Modify **conf.py**, look for **'html_theme'** and add:
+|     **2b.** Modify **conf.py**, look for **'html_theme'** and add:
 
 .. code-block:: python
 
@@ -43,7 +43,7 @@ To deploy this guide from `coderrefinery <https://coderefinery.github.io/documen
 
 ####
 
-| 2c.
+| **2c.**
 | Look for:
 | '# -- General configuration ------------------------------------------------'
 | and enable all pip installed extensions.
@@ -121,7 +121,6 @@ To make the invisible, visible, enter the following into the terminal.
 
     Type defaults write com.apple.Finder AppleShowAllFiles true
     Type killall Finder
-
 
 
 ####
