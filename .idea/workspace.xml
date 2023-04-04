@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aaf3d54-50ad-4257-b5f7-5feb550bfd38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/doc/Images/workflow-yaml.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/learn_myst.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/learn_myst.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/myfile.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/myfile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/installation.rst" beforeDir="false" afterPath="$PROJECT_DIR$/doc/installation.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/myfile.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,12 +21,12 @@
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/learn_myst.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="797">
-                <caret line="415" column="25" selection-start-line="415" selection-start-column="25" selection-end-line="415" selection-end-column="25" />
+              <first_editor relative-caret-position="800">
+                <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
               </first_editor>
               <second_editor />
             </state>
@@ -34,22 +34,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/myfile.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="440">
-                <caret line="20" selection-start-line="20" selection-end-line="20" />
-              </first_editor>
-              <second_editor />
-            </state>
+        <entry file="file://$PROJECT_DIR$/_build/installation.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_build/learn_myst.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1077" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2620">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="394">
+              <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -57,30 +57,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.github/workflows/documentation.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state>
+              <caret selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/doc/installation.rst">
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/Images/workflow-yaml.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/learning.rst">
           <provider selected="true" editor-type-id="restructured-text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/environment.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.readthedocs.yml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -112,19 +107,19 @@
         <option value="$PROJECT_DIR$/_build/_static/css/theme.css" />
         <option value="$PROJECT_DIR$/doc/resources.md" />
         <option value="$PROJECT_DIR$/doc/steps-needed.rst" />
-        <option value="$PROJECT_DIR$/doc/installation.rst" />
         <option value="$PROJECT_DIR$/.github/workflows/documentation.yaml" />
-        <option value="$PROJECT_DIR$/doc/conf.py" />
         <option value="$PROJECT_DIR$/doc/index.rst" />
         <option value="$PROJECT_DIR$/doc/myfile.md" />
         <option value="$PROJECT_DIR$/doc/learn_myst.md" />
+        <option value="$PROJECT_DIR$/doc/conf.py" />
+        <option value="$PROJECT_DIR$/doc/installation.rst" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="17" />
     <option name="y" value="30" />
-    <option name="width" value="1704" />
+    <option name="width" value="1540" />
     <option name="height" value="1241" />
   </component>
   <component name="ProjectView">
@@ -158,6 +153,12 @@
             <path>
               <item name="documentation-example" type="b2602c69:ProjectViewProjectNode" />
               <item name="documentation-example" type="462c0819:PsiDirectoryNode" />
+              <item name="_build" type="462c0819:PsiDirectoryNode" />
+              <item name="_static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="documentation-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="documentation-example" type="462c0819:PsiDirectoryNode" />
               <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -185,6 +186,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/Images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/doc" />
       <recent name="$PROJECT_DIR$/_build/_static" />
@@ -216,10 +220,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="17" y="30" width="1704" height="1241" extended-state="0" />
+    <frame x="17" y="30" width="1540" height="1241" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15686275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17379855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -280,9 +284,6 @@
     <entry file="file://$PROJECT_DIR$/doc/dependencies.rst" />
     <entry file="file://$PROJECT_DIR$/doc/target.rst" />
     <entry file="file://$PROJECT_DIR$/doc/steps-needed.rst" />
-    <entry file="file://$PROJECT_DIR$/_build/installation.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/resources.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -308,23 +309,6 @@
     <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_02.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.github/workflows/documentation.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2620">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/installation.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/index.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
@@ -338,18 +322,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/learning.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
+    <entry file="file://$PROJECT_DIR$/_build/learn_myst.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1077" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/learn_myst.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="797">
-            <caret line="415" column="25" selection-start-line="415" selection-start-column="25" selection-end-line="415" selection-end-column="25" />
+          <first_editor relative-caret-position="800">
+            <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/Images/workflow-yaml.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/workflows/documentation.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_build/installation.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/learning.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/installation.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
