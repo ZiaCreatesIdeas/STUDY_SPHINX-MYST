@@ -11,8 +11,8 @@ Basics
    :maxdepth: 2
 
    specifications.md
+   installation.rst
    learn_myst.md
    resources.md
-   installation.rst
    learning.rst
    credit.rst

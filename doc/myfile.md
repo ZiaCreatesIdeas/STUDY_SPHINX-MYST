@@ -18,14 +18,6 @@ Here's my admonition content
 
 And some more content.
 
-```commandline
-:optionname: <valuename>
-
-<directive content>
-
-```
-{ref}`My displayed text <my-ref>`
-
 (label-name)=
 ## Some header
 

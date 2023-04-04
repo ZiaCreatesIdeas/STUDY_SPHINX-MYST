@@ -411,9 +411,9 @@ This allows us to use:
     [some header](header-label)
     
 
-Clicking on the [link will take us to the Note Header](Note)
+Clicking on the [link will take us to the Note Header](Note!)
 
- Another page [next page](credit.rst) 
+ Another page [credit.rst](credit.rst) 
  
 ---
 #### Table
