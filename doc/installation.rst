@@ -112,6 +112,16 @@ The contents of the yaml file must include commands to install the extensions.
 
 Above, we see that there is a 'pip install extension' command for every extension we deploy.
 
+####
+
+| The above yaml file will respond to a push event to git and use workflows > Actions to create a gh-branch.
+| Once that branch is created, we go to Settings > Pages and set the repo to 'gh-pages'.
+
+
+.. raw:: html
+
+   <iframe src="https://onedrive.live.com/embed?cid=63413B86A87DF2B1&resid=63413B86A87DF2B1%218269&authkey=ANrxfVm_WKYfnSI" width="640" height="406" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
 .. attention:: Warning:
     Mac Machines hide files starting with '.'
 

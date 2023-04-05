@@ -69,7 +69,7 @@ Embedded images use:
     ![alt](src "title")
     ![A cute cat](https://example.com/cat.jpg "A cute cat")
     
-![cartoon fish](./_static/fun-fish.png "fun fish graphic")
+![cartoon fish](./Images/fun-fish.webp "fun fish graphic")
 
 ---
 
@@ -441,6 +441,15 @@ abc | mnp | xyz
 --- | --- | ---
 123 | 456 | 789
 :::
+
+---
+#### Task Lists
+    
+    - [ ] An item that needs doing
+    - [x] An item that is complete
+
+- [ ] An item that needs doing
+- [x] An item that is complete
 
 ---
 #### Multiple Size Headings
