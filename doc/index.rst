@@ -13,6 +13,7 @@ Basics
    specifications.md
    installation.rst
    learn_myst.md
+   myst-nb.md
    resources.md
    learning.rst
    credit.rst

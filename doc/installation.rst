@@ -9,6 +9,23 @@ Installation
 
 To deploy this guide from `coderrefinery <https://coderefinery.github.io/documentation/gh_workflow/>`_ , follow these steps...
 
+**A. Install Sphinx.**
+
+`sphinx-doc.org <https://www.sphinx-doc.org/en/master/usage/installation.html>`_
+
+.. code-block:: python
+
+    Win: pip intall -U sphinx
+    Mac: brew install sphinx-doc
+    Linux: apt-get install python3-sphinx
+
+Check version:
+
+.. code-block:: python
+
+    sphinx-build --version
+
+
 **1. Install support packages from terminal.**
 
 .. code-block:: python
@@ -19,12 +36,14 @@ To deploy this guide from `coderrefinery <https://coderefinery.github.io/documen
    pip install sphinx_design
    pip install pip install myst-nb
 
-| - Sphinx_rtd_theme is the current blue and yellow theme provided by 'ReadtheDocs'.
-| - Copybutton allows us to copy code from code blocks.
-| - Myst_parser allows us to use markdown instead of rst.
-|   Myst parser comes with its own extensions, such as Code and 'Colon Fence' for Admonitions.
-| - Sphinx_design allow for use of grids and cards in a document.
-| - Myst_NB allows for integration of Jupyter Notebook `Myst-nb <https://myst-nb.readthedocs.io/en/v0.9.0/use/start.html>`_
+| - **Sphinx_rtd_theme** is the current blue and yellow theme provided by 'ReadtheDocs'.
+| - **Copybutton** allows us to copy code from code blocks.
+| - **Myst_parser** allows us to use markdown instead of rst.
+|   Myst parser comes with its own extensions, such as 'Code' and 'Colon Fence' for Admonitions.
+| - **Sphinx_design** allow for use of grids and cards in a document.
+| - **Myst_NB** allows for integration of Jupyter Notebook `Myst-nb <https://myst-nb.readthedocs.io/en/v0.9.0/use/start.html>`_
+
+B. Install Pycharm or VSCode to view .rst files and to create .md markdown files.
 
 | **2.** Modify **CONF.PY**
 |     2a. After generating the template, in Conf.py, set the language.

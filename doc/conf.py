@@ -42,12 +42,12 @@ extensions = [
               'sphinx.ext.autosectionlabel',
               'myst_parser',
               'sphinx_design',
-              'tasklist'
-                            ]
+              ]
 
 myst_enable_extensions = [
-  "colon_fence",
-  "html_image"
+   "colon_fence",
+   "html_image",
+   "tasklist"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -63,7 +63,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'USD STUDY'
+project = 'STUDY SPHINX'
 copyright = '2023, USD Study Group.'
 author = 'Zia'
 
