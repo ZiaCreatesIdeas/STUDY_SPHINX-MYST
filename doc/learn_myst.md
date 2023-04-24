@@ -72,7 +72,7 @@ Embedded images use:
 ![cartoon fish](./Images/fun-fish.webp "fun fish graphic")
 
 ---
-
+**HTML elements go in _build folder, not Markdown Docs. They require different path syntax.**
 
 Using the HTML tag \'img' we can align and ajust the size of an image.
 
