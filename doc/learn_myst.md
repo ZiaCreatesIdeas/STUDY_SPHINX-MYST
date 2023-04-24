@@ -73,7 +73,8 @@ Embedded images use:
 
 ---
 
-**HTML elements go in _build folder, not Markdown Docs. They require different path syntax.**
+**HTML elements go in '_build' folder, not Markdown 'docs'.**   
+**They require different path syntax.**
 
 ---
 
