@@ -480,15 +480,39 @@ From Onedrive, the video can be doubled in size and over written by the height a
 We have installed myst-parser via documentation directions 
 [myst-parser](https://myst-parser.readthedocs.io/en/v0.17.1/syntax/optional.html#syntax-header-anchors)
 
+
+##### Link to Another Section in the Same Page.
 This allows us to use:
 
     [some header](header-label)
     
+    [link will take us to the Note Header](Table)
 
-Clicking on the [link will take us to the Note Header](Note!)
+Clicking on the [link will take us to the Table Header](Table)
 
- Another page [credit.rst](credit.rst) 
+ Another page that is .rst instead of Markdown.
+
+    [credit.rst](credit.rst)
  
+##### Link to Another Section of Another page.
+These are called explicit targets.
+
+```{note} 
+:class: warning
+ 
+```
+    (My_target)=
+    ## Explicit targets
+
+    Reference [](My_target). 
+
+Add '**(My_Target)=**'  
+to the header on the target page.  
+
+    [ ](My_target)
+
+[Explicit References documentation](https://docs.readthedocs.io/en/stable/guides/cross-referencing-with-sphinx.html#my-target)
+
 ---
 #### Table
  
