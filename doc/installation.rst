@@ -165,6 +165,12 @@ This is the command to build using Coderefinery's setup.
 
    sphinx-build doc _build
 
+We can use auto build to detect changes in code and trigger the build cycle on saving.
+
+.. code-block:: python
+
+   sphinx-autobuild doc _build
+
 
 **Test HTML pages links**
 
