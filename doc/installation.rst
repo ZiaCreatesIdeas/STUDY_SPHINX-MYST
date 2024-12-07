@@ -169,6 +169,7 @@ We can use auto build to detect changes in code and trigger the build cycle on s
 
 .. code-block:: python
 
+   python3 -m pip install sphinx-autobuild
    sphinx-autobuild doc _build
 
 

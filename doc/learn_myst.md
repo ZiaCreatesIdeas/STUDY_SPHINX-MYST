@@ -45,11 +45,11 @@ Code Block are created by indenting four spaces.
 #### Comments
 Comments use the '%' to precede the comment.
 
-    %
+\% This is a comment on a single line.
+
+This is also a single line comment
+
     [//]: # (This is a comment.)
-    [//]: # (This is a
-    multiline comment.
-    It can span multiple lines.)
     
 ```{note} 
 :class: warning
@@ -57,11 +57,52 @@ Comments use the '%' to precede the comment.
 Spaces must be included around ': # ('
 
 ``` 
+    
+We can achieve multiline comments also.
+
+    [//]: # (This is a
+    multiline comment.
+    It can span multiple lines.
+    Even if I just keep typing.
+    embedded in paranthesis.
+    )
+
+
+[//]: # (This is a
+multiline comment.
+It can span multiple lines.
+Even if I just keep typing.
+As long as it is embedded in paranthesis. 
+)
+    
+    
+
 
 % comment
-[\\]: # (why all this for
- a comment)
+ 
+ [Stack Overflow Markdown multiline discussion](https://stackoverflow.com/questions/4823468/comments-in-markdown)
+ 
+ \<!--- 
+ your comment \
+ goes here and  \
+ here.
+ \--->
+ 
+ ![screen shot of multiline comments html](images/myst-markdown-comments.png)
+ 
+ * Note there are three dashes.
+ 
 ---
+
+
+#### Bullet Points
+
+Can be dashes, '-', or '\*'.  
+Double asterisks leads to an empty circle bullet. \
+'\* \*'
+* * Double Bullet Example.
+
+___
 
 #### Embedded Images
 Embedded images use:
@@ -70,6 +111,10 @@ Embedded images use:
     ![A cute cat](https://example.com/cat.jpg "A cute cat")
     
 ![cartoon fish](./Images/fun-fish.webp "fun fish graphic")
+
+To embed images from a local directory:
+
+    ![screen shot of multiline comments html](images/myst-markdown-comments.png)
 
 ---
 
