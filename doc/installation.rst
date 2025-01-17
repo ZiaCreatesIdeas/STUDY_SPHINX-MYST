@@ -4,7 +4,7 @@
 
 .. _installation:
 
-Installation
+Install Sphinx and Myst
 =============
 
 To deploy this guide from `coderrefinery <https://coderefinery.github.io/documentation/gh_workflow/>`_ , follow these steps...
