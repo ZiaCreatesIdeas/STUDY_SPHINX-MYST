@@ -7,9 +7,25 @@
 Basics
 ==========
 
+.. tabs::
+
+   .. tab:: Apples2
+
+      Apples are green, or sometimes red.
+
+   .. tab:: Pears
+
+      Pears are green.
+
+   .. tab:: Oranges
+
+      Oranges are orange.
+
+
 .. toctree::
    :maxdepth: 2
 
+   addSSH.md
    specifications.md
    installation.rst
    learn_myst.md

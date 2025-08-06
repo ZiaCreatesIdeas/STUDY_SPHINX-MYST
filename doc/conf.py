@@ -42,12 +42,14 @@ extensions = [
               'sphinx.ext.autosectionlabel',
               'myst_parser',
               'sphinx_design',
+              'sphinx_tabs.tabs'
               ]
 
 myst_enable_extensions = [
    "colon_fence",
    "html_image",
    "tasklist"
+
 ]
 
 # Add any paths that contain templates here, relative to this directory.

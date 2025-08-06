@@ -486,19 +486,6 @@ ___
 |------|-----------|
 | 1:04 | [https://youtu.be/t9xd0hBC_v8?t=64](https://youtu.be/t9xd0hBC_v8?t=64 "Time: 1:04") |
 
-
-
----
-
-#### Embed Giphy
-
-<div style ="display:block">
-<iframe src="https://giphy.com/embed/3o84U5xPhrn42WgBJC" width="480" height="282" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-<p>
-<a href="https://giphy.com/gifs/foxhomeent-office-space-milton-3o84U5xPhrn42WgBJC">via GIPHY</a>
-</p>
-</div>
-
 ---
 
 ```{admonition} Horizontal Rule post video embed
@@ -514,6 +501,19 @@ Be sure to add a Horizontal Rule after the '/div' for a video embed.
 From Onedrive, the video can be doubled in size and over written by the height and width parameters.
 
 ```   
+
+---
+
+#### Embed Giphy
+
+<div style ="display:block">
+<iframe src="https://giphy.com/embed/3o84U5xPhrn42WgBJC" width="480" height="282" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<p>
+<a href="https://giphy.com/gifs/foxhomeent-office-space-milton-3o84U5xPhrn42WgBJC">via GIPHY</a>
+</p>
+</div>
+
+
 ---
 #### Links
 
@@ -604,6 +604,14 @@ abc | mnp | xyz
 To create bold text in HTML, you can use the <strong> or <b> tags.
 
     <p>This is <strong>bold text</strong>.</p>
+
+---
+
+#### Tabs
+
+
+
+
 
 ---
 #### Multiple Size Headings

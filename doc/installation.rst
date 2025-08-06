@@ -35,6 +35,7 @@ Check version:
    pip install myst_parser
    pip install sphinx_design
    pip install pip install myst-nb
+   pip install sphinx-tabs
 
 | - **Sphinx_rtd_theme** is the current blue and yellow theme provided by 'ReadtheDocs'.
 | - **Copybutton** allows us to copy code from code blocks.
@@ -42,6 +43,7 @@ Check version:
 |   Myst parser comes with its own extensions, such as 'Code' and 'Colon Fence' for Admonitions.
 | - **Sphinx_design** allow for use of grids and cards in a document.
 | - **Myst_NB** allows for integration of Jupyter Notebook `Myst-nb <https://myst-nb.readthedocs.io/en/v0.9.0/use/start.html>`_
+| - **Sphinx-tabs** is useful for allowing virtual tabs within a page (ie. Linux | win | Mac).
 
 B. Install Pycharm or VSCode to view .rst files and to create .md markdown files.
 
@@ -75,6 +77,7 @@ B. Install Pycharm or VSCode to view .rst files and to create .md markdown files
                   'sphinx.ext.autosectionlabel',
                   'myst_parser',
                   'sphinx_design'
+                  'sphinx-tabs'
                  ]
 
     myst_enable_extensions = [
@@ -173,13 +176,14 @@ We can use auto build to detect changes in code and trigger the build cycle on s
    sphinx-autobuild doc _build
 
 
-**Test HTML pages links**
+**Test HTML pages TEST links**
 
 Inside the cloned repository, check the integrity of all internal and external links:
 
 .. code-block::
 
     sphinx-build doc -W -b linkcheck -d _build/doctrees _build/html
+
 
 
 
