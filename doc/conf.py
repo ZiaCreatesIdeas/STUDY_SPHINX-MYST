@@ -42,7 +42,7 @@ extensions = [
               'sphinx.ext.autosectionlabel',
               'myst_parser',
               'sphinx_design',
-              'sphinx_tabs.tabs'
+              'sphinx_tabs.tabs',
               ]
 
 myst_enable_extensions = [
@@ -68,6 +68,9 @@ master_doc = 'index'
 project = 'STUDY SPHINX'
 copyright = '2023, USD Study Group.'
 author = 'Zia'
+
+tocdepth = 4
+
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

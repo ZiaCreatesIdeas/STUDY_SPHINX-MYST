@@ -34,6 +34,14 @@ Consists of three dashes. Sphinx calls these 'transitions'.
 
     ---
 
+#### White Space
+Create two blank spaces (for indentation).
+
+```markdown
+
+&nbsp;&nbsp;
+
+```
 --- 
 #### Code Blocks
 Code Block are created by indenting four spaces.
@@ -41,6 +49,18 @@ Code Block are created by indenting four spaces.
     Indent (four spaces gives us an code block.
     A space above to separate the block from any preceding text may be required.
 ---
+
+Code Block can also be written using ``` three back ticks.
+
+```markdown
+
+  ```python  
+         print("This is a code block")  
+         Code block content here
+  ```# closing back tick
+
+```
+
 
 #### Comments
 Comments use the '%' to precede the comment.
@@ -115,6 +135,15 @@ Embedded images use:
 To embed images from a local directory:
 
     ![screen shot of multiline comments html](images/myst-markdown-comments.png)
+
+
+```{note} Local Images:
+:class: warning
+
+"./Images/path"   
+Be sure to reference the directory relatively with no absolute path.
+
+```   
 
 ---
 
@@ -325,6 +354,42 @@ Footer
 :::
 
 ---
+
+**Cards - Styling**
+
+```{note} Specificity of ID Selectors
+:class: warning
+
+ID selectors have very high specificity and override class and type selectors.
+
+```    
+
+---
+
+```{note} Cards - Align Heights
+:class: warning
+
+Sphinx‑Design’s card groups automatically align card heights:
+
+```  
+
+```
+::: {card-group}
+::: {card}
+Card 1 HTML…
+:::
+
+::: {card}
+Card 2 HTML…
+:::
+:::
+
+```
+
+
+---
+
+
 **Cards in a Grid**
 
     ::::{grid} 2
@@ -610,14 +675,27 @@ To create bold text in HTML, you can use the <strong> or <b> tags.
 #### Tabs
 
 
+#### Classes
 
-
+![No Spaces](./Images/Spaces_No-Spaces.png)
 
 ---
+
 #### Multiple Size Headings
 These are examples of different size headings.
 
     h1: #, h2: ##, h3: ###, h4: ####, h5: #####, h6: ######
+
+
+::::{important}
+
+In MyST/Sphinx Navigation Panel:
+
+Headings that appear in the navigation panel must be part of the document section hierarchy.
+
+If you place a heading after another section of the same or higher level without proper hierarchy, Sphinx may treat it as “out of section” and it won’t get a ToC entry.
+
+:::: 
 
 # Heading 1
 
@@ -631,8 +709,8 @@ These are examples of different size headings.
 
 ###### Heading 6
 
+#### Heading 2
 
-
-
+---
 
 

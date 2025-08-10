@@ -1,0 +1,8 @@
+/* Allow table cells to wrap in ReadTheDocs theme */
+.docutils align-default table td,
+.docutils align-default th {
+  white-space: normal !important;
+  word-break: break-word;
+}
+ 
+  
