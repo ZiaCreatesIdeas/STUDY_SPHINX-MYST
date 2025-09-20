@@ -1,4 +1,3 @@
-
 (learn-myst)=
 ## Learn Myst Markdown
 This is a list of the minimum specifications required to create useful documention.
@@ -15,6 +14,7 @@ This is a list of the minimum specifications required to create useful documenti
 - Links [Section, Page, External]
 - Escape Special Characters
 - Theme Variations (dark)
+- Classes
 
 #### Carriage Return / Line Break
 
@@ -29,7 +29,7 @@ But here instead we end the line with two spaces.
 Or we can use\
 a backslash.
 
-#### Horizontal Rule / Line across page)
+#### Horizontal Rule - Line across page
 Consists of three dashes. Sphinx calls these 'transitions'.
 
     ---
@@ -284,6 +284,20 @@ Here's note content
 
 ``` 
 ---
+
+#### Tabs
+
+```{tabs}
+```{tab} Conda Install
+To install Sphinx.
+
+```{tab} PIP Install
+To install PIP.
+
+```
+```
+
+
 #### Grids
 Grids!
 
@@ -357,16 +371,16 @@ Footer
 
 **Cards - Styling**
 
-```{note} Specificity of ID Selectors
+```{note} 
 :class: warning
 
-ID selectors have very high specificity and override class and type selectors.
+Specificity of ID Selectors: ID selectors have very high specificity and override **class** and type selectors.
 
 ```    
 
 ---
 
-```{note} Cards - Align Heights
+```{note} 
 :class: warning
 
 Sphinx‑Design’s card groups automatically align card heights:
@@ -386,9 +400,29 @@ Card 2 HTML…
 
 ```
 
+Card Group background can be styled:  
+```
+::: {card-group} :class-card-group: my-card-group
+:::{card}
 
----
+Content of card 1
+:::
+:::{card}
 
+Content of card 2
+:::
+:::
+
+```
+
+```
+.my-card-group {
+  background-color: #f0f8ff; /* Light blue background */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+```
 
 **Cards in a Grid**
 
@@ -560,7 +594,7 @@ Be sure to add a Horizontal Rule after the '/div' for a video embed.
 
 ```
 
-```{note} Video Sizing
+```{note}
 :class: warning
 
 From Onedrive, the video can be doubled in size and over written by the height and width parameters.
@@ -607,10 +641,6 @@ Clicking on the [link will take us to the Table Header](Table)
 ##### Link to Another Section of Another page.
 These are called explicit targets.
 
-```{note} 
-:class: warning
- 
-```
     (My_target)=
     ## Explicit targets
 
@@ -672,15 +702,14 @@ To create bold text in HTML, you can use the <strong> or <b> tags.
 
 ---
 
-#### Tabs
 
-
+(a-classes)=
 #### Classes
 
 ![No Spaces](./Images/Spaces_No-Spaces.png)
 
----
 
+(multiple-size-headings)=
 #### Multiple Size Headings
 These are examples of different size headings.
 

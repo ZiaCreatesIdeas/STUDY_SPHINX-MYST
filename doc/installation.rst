@@ -16,8 +16,39 @@ To deploy this guide from `coderrefinery <https://coderefinery.github.io/documen
 .. code-block:: python
 
     Win: pip intall -U sphinx
-    Mac: brew install sphinx-doc
     Linux: apt-get install python3-sphinx
+
+
+.. code-block:: python
+
+    Mac (MiniConda): 
+      curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+      bash Miniconda3-latest-MacOSX-x86_64.sh
+
+    Test Environment:
+      conda info --envs
+      conda env list  
+
+    Turn Conda Off / On:
+      conda deactivate
+      conda activate
+
+    Create Environment:
+      conda create --name Sphinx
+      condo activate Sphinx
+
+    Install Sphinx from Conda-Forge:
+      conda install -c conda-forge sphinx
+      conda list -n sphinx
+
+    Install Sphinx Conda Packages:
+      conda install -c conda-forge sphinx sphinx_rtd_theme sphinx_copybutton myst_parser sphinx_design myst-nb sphinx-tabs
+
+     
+
+
+
+
 
 Check version:
 
@@ -172,8 +203,14 @@ We can use auto build to detect changes in code and trigger the build cycle on s
 
 .. code-block:: python
 
+   pip install spinx-autobuild
+   or if using python3: 
    python3 -m pip install sphinx-autobuild
+   Run using:
    sphinx-autobuild doc _build
+   Point Browser at:
+   http://127.0.0.1:8000
+   Changes will be autoloaded in the browser upon completion.
 
 
 **Test HTML pages TEST links**

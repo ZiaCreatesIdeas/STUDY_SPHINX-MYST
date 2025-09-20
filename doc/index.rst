@@ -9,9 +9,9 @@ Basics
 
 .. tabs::
 
-   .. tab:: Apples2
+   .. tab:: Apples3
 
-      Apples are green, or sometimes red.
+      Apples are green, or sometimes red. Or blue.
 
    .. tab:: Pears
 
@@ -25,11 +25,12 @@ Basics
 .. toctree::
    :maxdepth: 2
 
-   addSSH.md
    specifications.md
    installation.rst
+   addSSH.md
    learn_myst.md
    myst-nb.md
    resources.md
    learning.rst
    credit.rst
+  
