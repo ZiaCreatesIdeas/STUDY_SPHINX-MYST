@@ -7,6 +7,8 @@
 Basics
 ==========
 
+For example, rst can have tabs:
+
 .. tabs::
 
    .. tab:: Apples3
