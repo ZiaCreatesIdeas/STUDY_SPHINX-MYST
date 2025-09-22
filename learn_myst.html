@@ -1,0 +1,852 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn Myst Markdown &mdash; STUDY SPHINX 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+      <script src="_static/tabs.js?v=3030b3cb"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Myst-NB (Jupyter Notebooks)" href="myst-nb.html" />
+    <link rel="prev" title="Add SSH Key to Github" href="addSSH.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            STUDY SPHINX
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="specifications.html">Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Install Sphinx and Myst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addSSH.html">Add SSH Key to Github</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Learn Myst Markdown</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#carriage-return-line-break">Carriage Return / Line Break</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#horizontal-rule-line-across-page">Horizontal Rule - Line across page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#white-space">White Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-blocks">Code Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bullet-points">Bullet Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#embedded-images">Embedded Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#admonition">Admonition!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#note">Note!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tabs">Tabs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#embed-video">Embed Video</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#embed-giphy">Embed Giphy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#links">Links</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#external-url">External Url.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#link-to-another-section-in-the-same-page">Link to Another Section in the Same Page.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#link-to-another-section-of-another-page">Link to Another Section of Another page.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#table">Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-lists">Task Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#html-tags">Html Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#classes">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#multiple-size-headings">Multiple Size Headings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#heading-1">Heading 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#heading-2">Heading 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#heading-3">Heading 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#heading-4">Heading 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Heading 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="myst-nb.html">Myst-NB (Jupyter Notebooks)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html">LEARNING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html#header-sizes">Header Sizes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html#sample-h3">Sample H3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html#ie-header">ie. HEADER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html#links">Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credit.html">Credit &amp; inspiration</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">STUDY SPHINX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Learn Myst Markdown</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/learn_myst.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="learn-myst-markdown">
+<span id="learn-myst"></span><h1>Learn Myst Markdown<a class="headerlink" href="#learn-myst-markdown" title="Link to this heading"></a></h1>
+<p>This is a list of the minimum specifications required to create useful documention.</p>
+<ul class="simple">
+<li><p>Carriage return / Line Break</p></li>
+<li><p>Horizontal Rule</p></li>
+<li><p>Multiple size headers</p></li>
+<li><p>Codeblocks (copy code button)</p></li>
+<li><p>Comments</p></li>
+<li><p>Embedded Images</p></li>
+<li><p>Admonition</p></li>
+<li><p>Note</p></li>
+<li><p>Embedded Video (Onedrive)</p></li>
+<li><p>Links [Section, Page, External]</p></li>
+<li><p>Escape Special Characters</p></li>
+<li><p>Theme Variations (dark)</p></li>
+<li><p>Classes</p></li>
+</ul>
+<section id="carriage-return-line-break">
+<h2>Carriage Return / Line Break<a class="headerlink" href="#carriage-return-line-break" title="Link to this heading"></a></h2>
+<p>In Myst, line breaks can be accomplished by adding two spaces at the end or backslash.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;  &#39;
+\
+</pre></div>
+</div>
+<p>This is a line break<br />
+as we typically get in code using ‘\n’.<br />
+But here instead we end the line with two spaces.<br />
+Or we can use<br />
+a backslash.</p>
+</section>
+<section id="horizontal-rule-line-across-page">
+<h2>Horizontal Rule - Line across page<a class="headerlink" href="#horizontal-rule-line-across-page" title="Link to this heading"></a></h2>
+<p>Consists of three dashes. Sphinx calls these ‘transitions’.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>---
+</pre></div>
+</div>
+</section>
+<section id="white-space">
+<h2>White Space<a class="headerlink" href="#white-space" title="Link to this heading"></a></h2>
+<p>Create two blank spaces (for indentation).</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>&amp;nbsp;&amp;nbsp;
+</pre></div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="code-blocks">
+<h2>Code Blocks<a class="headerlink" href="#code-blocks" title="Link to this heading"></a></h2>
+<p>Code Block are created by indenting four spaces.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Indent (four spaces gives us an code block.
+A space above to separate the block from any preceding text may be required.
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>Code Block can also be written using ``` three back ticks.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>  ```python  
+         print(&quot;This is a code block&quot;)  
+         Code block content here
+  ```# closing back tick
+</pre></div>
+</div>
+</section>
+<section id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Link to this heading"></a></h2>
+<p>Comments use the ‘%’ to precede the comment.</p>
+<p>% This is a comment on a single line.</p>
+<p>This is also a single line comment</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[//]: # (This is a comment.)
+</pre></div>
+</div>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>Spaces must be included around ‘: # (’</p>
+</div>
+<p>We can achieve multiline comments also.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[//]: # (This is a
+multiline comment.
+It can span multiple lines.
+Even if I just keep typing.
+embedded in paranthesis.
+)
+</pre></div>
+</div>
+<p><a class="reference external" href="https://stackoverflow.com/questions/4823468/comments-in-markdown">Stack Overflow Markdown multiline discussion</a></p>
+<p>&lt;!—
+your comment <br />
+goes here and  <br />
+here.
+—&gt;</p>
+<p><img alt="screen shot of multiline comments html" src="images/myst-markdown-comments.png" /></p>
+<ul class="simple">
+<li><p>Note there are three dashes.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="bullet-points">
+<h2>Bullet Points<a class="headerlink" href="#bullet-points" title="Link to this heading"></a></h2>
+<p>Can be dashes, ‘-’, or ‘*’.<br />
+Double asterisks leads to an empty circle bullet. <br />
+‘* *’</p>
+<ul class="simple">
+<li><ul>
+<li><p>Double Bullet Example.</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="embedded-images">
+<h2>Embedded Images<a class="headerlink" href="#embedded-images" title="Link to this heading"></a></h2>
+<p>Embedded images use:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>![alt](src &quot;title&quot;)
+![A cute cat](https://example.com/cat.jpg &quot;A cute cat&quot;)
+</pre></div>
+</div>
+<p><img alt="cartoon fish" src="_images/fun-fish.webp" /></p>
+<p>To embed images from a local directory:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>![screen shot of multiline comments html](images/myst-markdown-comments.png)
+</pre></div>
+</div>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>Local Images:</p>
+<p>“./Images/path”<br />
+Be sure to reference the directory relatively with no absolute path.</p>
+</div>
+<hr class="docutils" />
+<p><strong>HTML elements go in ‘_build’ folder, not Markdown ‘docs’.</strong><br />
+<strong>They require different path syntax.</strong></p>
+<hr class="docutils" />
+<p>Using the HTML tag ‘img’ we can align and ajust the size of an image.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;img src=&quot;image_file_path&quot; alt=&quot;alternate_text&quot;&gt;
+&lt;img src=&quot;./_static/fun-fish.png&quot; alt=&quot;cartoon fish&quot; align=&quot;left&quot; width=&quot;100&quot;&gt;
+XHTML tags should be closed, HTML5 do not.
+</pre></div>
+</div>
+<p>  
+<br>    
+<img src="./_static/fun-fish.png" alt="cartoon fish" align="left" width="100">
+<br>
+</p>
+<p>Without using ‘div’ statements, we have a problem.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;div style=&quot;display:block; text-align:center;&quot;&gt;
+&lt;img src=&quot;./_static/fun-fish.png&quot; alt=&quot;cartoon fish&quot; align=&quot;center&quot; width=&quot;100&quot;&gt;
+&lt;/div&gt;
+</pre></div>
+</div>
+<div style="display:block; text-align:center;">
+  <img src="./_static/fun-fish.png" alt="cartoon fish" align="center" width="125">
+</div>
+<p>Alternately we use margin:auto to center:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;div style=&quot;display:block; text-align:center;&quot;&gt;
+&lt;img src=&quot;./_static/fun-fish.png&quot; alt=&quot;cartoon fish&quot; width=&quot;100&quot; style=&quot;margin:auto;&quot;&gt;
+&lt;/div&gt;
+</pre></div>
+</div>
+<div style="display:block; text-align:center;">
+  <img src="./_static/fun-fish.png" alt="cartoon fish" width="125" style="margin:auto;">
+</div>
+<hr class="docutils" />
+<p>Image right align:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;div style=&quot;text-align: right;&quot;&gt;
+&lt;img src=&quot;./_static/fun-fish.png&quot; alt=&quot;alt text&quot; style=&quot;float: right; margin-left: 10px; display: block; clear: right;&quot;&gt;
+&lt;img src=&quot;./_static/fun-fish.png&quot; alt=&quot;alt text&quot; style=&quot;float: right; margin-left: 10px; display: block; clear: right;&quot;&gt;
+&lt;/div&gt;
+</pre></div>
+</div>
+<div style="display:block; text-align: center;">
+  <img src="./_static/fun-fish.png" alt="alt text" width="150" style="float: right; margin-left: 10px; display: block; clear: right;">
+  <img src="./_static/fun-fish.png" alt="alt text" width="150" style="float: right; margin-left: 10px; display: block; clear: right;">
+</div>
+<div style="display:block; text-align: right;">
+  <img src="./_static/fun-fish.png" alt="cartoon fish" width="150" style="float: right;">
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;text-align:right;&quot;</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;./_static/fun-fish.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;alt text&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;150&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display:block;&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>We can flop an image using:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;div style=&quot;display:block; text-align:center; transform: scaleX(-1);&quot;&gt;
+&lt;img src=&quot;./_static/fun-fish.png&quot; alt=&quot;cartoon fish&quot; align=&quot;right&quot; width=&quot;150&quot;&gt;
+&lt;/div&gt;   
+</pre></div>
+</div>
+<div style ="display:block">
+   <div style="display:block; text-align:center; transform: scaleX(-1);">
+     <img src="./_static/fun-fish.png" alt="cartoon fish" width="125" style="margin:auto;">
+   </div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="admonition">
+<h2>Admonition!<a class="headerlink" href="#admonition" title="Link to this heading"></a></h2>
+<p>Here is how to add Admonition.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```{admonition} Here&#39;s my title
+:class: warning
+
+Here&#39;s my admonition content
+```  
+</pre></div>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Here’s my title</p>
+<p>Here’s my admonition content</p>
+</div>
+<p><a class="reference external" href="https://myst-parser.readthedocs.io/en/v0.17.1/syntax/optional.html#syntax-header-anchors">Admonition vis Code Fence (Myst)</a></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>::::{important}
+:::{note}
+This text is **standard** _Markdown_
+:::
+:::: 
+</pre></div>
+</div>
+<p>::::{important}
+:::{note}
+This text is <strong>standard</strong> <em>Markdown</em>
+:::
+::::</p>
+<p>Notes done with Code Fences can be bolded.<br />
+We can also use ‘div’ statements to alter the background.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;div class=&quot;admonition note&quot; name=&quot;html-admonition&quot; style=&quot;background: lightgreen; padding: 10px&quot;&gt;
+&lt;p class=&quot;title&quot;&gt;This is the **title**&lt;/p&gt;
+This is the *content*
+&lt;/div&gt;
+</pre></div>
+</div>
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title">This is the **title**</p>
+This is the *content*
+</div>
+<hr class="docutils" />
+</section>
+<section id="note">
+<h2>Note!<a class="headerlink" href="#note" title="Link to this heading"></a></h2>
+<p>Here is how to add a Note.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```{note} Here&#39;s my title
+:class: warning
+
+Here&#39;s my note content
+```    
+</pre></div>
+</div>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>Here’s my title</p>
+<p>Here’s note content</p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="tabs">
+<h2>Tabs<a class="headerlink" href="#tabs" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Conda Install</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">PIP Install</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>To install Sphinx.</p>
+<div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>To install PIP.</p>
+</div></div></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+#### Grids
+Grids!
+
+    ::::{grid} 1 2 3 4
+    :outline:
+    
+    :::{grid-item}
+    A
+    :::
+    :::{grid-item}
+    B
+    :::
+    :::{grid-item}
+    C
+    :::
+    :::{grid-item}
+    D
+    :::
+    ::::
+          
+
+::::{grid} 1 2 3 4
+:outline:
+
+:::{grid-item}
+A
+:::
+:::{grid-item}
+B
+:::
+:::{grid-item}
+C
+:::
+:::{grid-item}
+D
+:::
+::::
+
+---
+#### Cards
+
+    :::{card} Card Title
+
+    Card content
+    :::
+
+:::{card} Card Title
+
+Card content
+:::
+
+---
+
+    :::{card} Card Title
+    Header
+    ^^^
+    Card content
+    +++
+    Footer
+    :::                
+
+:::{card} Card Title
+Header
+^^^
+Card content
++++
+Footer
+:::
+
+---
+
+**Cards - Styling**
+
+```{note} 
+:class: warning
+
+Specificity of ID Selectors: ID selectors have very high specificity and override **class** and type selectors.
+
+</pre></div>
+</div>
+<hr class="docutils" />
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>Sphinx‑Design’s card groups automatically align card heights:</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>::: {card-group}
+::: {card}
+Card 1 HTML…
+:::
+
+::: {card}
+Card 2 HTML…
+:::
+:::
+
+</pre></div>
+</div>
+<p>Card Group background can be styled:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:::</span> <span class="p">{</span><span class="n">card</span><span class="o">-</span><span class="n">group</span><span class="p">}</span> <span class="p">:</span><span class="n">class</span><span class="o">-</span><span class="n">card</span><span class="o">-</span><span class="n">group</span><span class="p">:</span> <span class="n">my</span><span class="o">-</span><span class="n">card</span><span class="o">-</span><span class="n">group</span>
+<span class="p">:::{</span><span class="n">card</span><span class="p">}</span>
+
+<span class="n">Content</span> <span class="n">of</span> <span class="n">card</span> <span class="mi">1</span>
+<span class="p">:::</span>
+<span class="p">:::{</span><span class="n">card</span><span class="p">}</span>
+
+<span class="n">Content</span> <span class="n">of</span> <span class="n">card</span> <span class="mi">2</span>
+<span class="p">:::</span>
+<span class="p">:::</span>
+
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">my</span><span class="o">-</span><span class="n">card</span><span class="o">-</span><span class="n">group</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#f0f8ff; /* Light blue background */</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">8</span><span class="n">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+</pre></div>
+</div>
+<p><strong>Cards in a Grid</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>::::{grid} 2
+:::{grid-item-card}  Title 1
+A
+:::
+:::{grid-item-card}  Title 2
+B
+:::
+::::
+</pre></div>
+</div>
+<p>::::{grid} 2
+:::{grid-item-card}  Title 1</p>
+<iframe width="280" height="145" src="https://www.youtube.com/embed/t9xd0hBC_v8?start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::
+:::{grid-item-card}  Title 2
+<iframe width="280" height="145" src="https://www.youtube.com/embed/t9xd0hBC_v8?start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::
+::::
+<hr class="docutils" />
+</section>
+<section id="embed-video">
+<h2>Embed Video<a class="headerlink" href="#embed-video" title="Link to this heading"></a></h2>
+<div data-test="embeddedWebinarWithQ&amp;A-component" class="rf-attribute embeddedWebinarWithQ&amp;A-component"><div class="rf-webinar-content rf-flex-frame with-qanda"><div class="rf-video-player rf-kaltura-player"><script src="https://cdnapisec.kaltura.com/p/3200283/embedPlaykitJs/uiconf_id/47254103"></script><div id="djJ8MzIwMDI4M3zALh59e31Ad91DNE_aYIFPNlAKTgdQYec2MNkEw76zXvK83X94nQQp1xcMgvxplwfRgYpXIQLl4fl97rVf-iSrAkFK0zDHZJyudu_-uE4n9DUfQsO9bYsRSasL3_Ck2LzHH83v-sJVXRnCSBJ7UQ-S0RSBT-kG-Wv-zfnfVDHJOWyrDxqiraMnc1XrLbG_dBSavoIFHxbVM32lckwgpiallH0gREGBSH-IXkVq7JzDEezog-ANMh-wXQWGANq-3FwDrHZeNKptzMRwW0zMsNP4Y4i1zfyKt8ui-9B1Pdmh_mjRErjxLpGajCrSllFrFTg=" class="rf-player-inner"><div id="_68fid" class="kaltura-player-container" tabindex="-1"><div tabindex="0" aria-label="Video Player" class="playkit-player  playkit-Mac-OS playkit-Firefox playkit-hover playkit-metadata-loaded playkit-state-paused playkit-size-lg notranslate"><span></span><div id="_68fid-video" class="playkit-video-player" style="position: absolute; inset: 0px;"><div class="playkit-container" id="_k04f3" tabindex="-1"><video id="_proy4" class="playkit-engine playkit-engine-html5" playsinline="" src="blob:https://register.nvidia.com/d7eb5b47-8d5e-0149-8d28-0e959b6eb0ec"></video><div class="playkit-black-cover" style="visibility: hidden;"></div><div id="_epqca" tabindex="-1" class="playkit-poster" style="background-image: url(&quot;https://cfvod.kaltura.com/p/3200283/sp/320028300/thumbnail/entry_id/1_q1aqr1af/version/100011/height/488/width/868&quot;); display: none;"></div><div class="playkit-subtitles"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div id="playkit-bumper-container_k04f3" class="playkit-bumper-container" style="visibility: hidden;"><video></video><div class="playkit-bumper-cover"></div><a class="playkit-bumper-click-through" target="_blank"></a></div></div></div><div><div class="playkit-player-gui" id="player-gui"><div style="position: absolute; inset: 0px;" class="playkit-overlay-action "></div><div style="position: absolute; inset: 0px;" class="playkit-video-area"><div style="pointer-events: auto;"><div aria-live="polite" tabindex="-1" class="offline-slate__slate-wrapper___pobqn "></div></div></div><div style="position: absolute; inset: 0px;" class="playkit-gui-area"><div style="pointer-events: auto;"><div class="overlay-portal" aria-live="polite"></div><div class="playkit-playback-controls playkit-center-playback-controls"><div class="playkit-control-button-container playkit-control-play-pause"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Play" class="playkit-control-button"><div><i class="playkit-icon playkit-icon-play"></i><i class="playkit-icon playkit-icon-pause"></i></div></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Play</span></div></div></div></div><div class="playkit-top-bar"><div class="playkit-top-bar-area"></div><div class="playkit-left-controls"></div><div class="playkit-right-controls"></div></div><div class="playkit-interactive-area"><div style="pointer-events: auto;"></div></div><div class="playkit-bottom-bar playkit-line-break"><div class="playkit-bottom-bar-area"><div tabindex="0" class="playkit-seek-bar" role="slider" aria-label="Seek slider" aria-valuemin="0" aria-valuemax="2376" aria-valuenow="404" aria-valuetext="06:43 of 39:36"><div class="playkit-progress-bar"><div class="playkit-frame-preview" style="left: 778.499px;"><div style="height: 96px; width: 168px;" class="playkit-frame-preview-img-container playkit-non-sticky"><div class="playkit-frame-preview-img" style="background: rgba(0, 0, 0, 0) url(&quot;https://cfvod.kaltura.com/p/3200283/sp/320028300/thumbnail/entry_id/1_q1aqr1af/version/100011/width/164/vid_slices/100&quot;) repeat scroll -15252px 0px;"></div></div></div><div class="playkit-time-preview" style="left: 778.499px;">36:52</div><div class="playkit-buffered" style="width: 0%;"></div><div class="playkit-progress" style="width: 16.9918%;"><a class="playkit-scrubber"></a></div><div class="playkit-virtual-progress" style="width: 93.1219%;"><div class="playkit-virtual-progress-indicator"></div></div></div></div></div><div class="playkit-left-controls"><div class="playkit-playback-controls "><div class="playkit-control-button-container playkit-control-play-pause"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Play" class="playkit-control-button"><div><i class="playkit-icon playkit-icon-play"></i><i class="playkit-icon playkit-icon-pause"></i></div></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-right playkit-hide">Play</span></div></div></div><div class="playkit-control-button-container playkit-control-rewind playkit-no-idle-control"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Seek backwards" class="playkit-control-button"><i class="playkit-icon playkit-icon-rewind-10"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Seek backwards</span></div></div><div class="playkit-control-button-container playkit-control-forward playkit-no-idle-control"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Seek forward" class="playkit-control-button"><i class="playkit-icon playkit-icon-forward-10"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Seek forward</span></div></div><div class="playkit-time-display"><span>06:43 / 39:36</span></div></div><div class="playkit-right-controls"><div class="playkit-control-button-container playkit-control-volume playkit-volume-control" role="application"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-live="polite" aria-label="100% volume. Click to mute" class="playkit-control-button"><i class="playkit-icon playkit-icon-volume-base"></i><i class="playkit-icon playkit-icon-volume-waves"></i><i class="playkit-icon playkit-icon-volume-mute"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-left playkit-hide">Mute</span></div><div class="playkit-volume-control-bar" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-valuetext="100% volume "><div class="playkit-bar"><div class="playkit-progress" style="height: 100%;"></div></div></div></div><div class="playkit-control-button-container playkit-control-language"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-haspopup="true" aria-label="Language" class="playkit-control-button"><i class="playkit-icon playkit-icon-language"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Language</span></div><div></div></div><div class="playkit-control-button-container playkit-control-settings"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Settings" class="playkit-control-button playkit-button-badge playkit-badge-icon playkit-icon-quality-hd-active "><i class="playkit-icon playkit-icon-settings"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Settings</span></div></div><div class="playkit-control-button-container playkit-control-fullscreen"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Fullscreen" class="playkit-control-button"><i class="playkit-icon playkit-icon-maximize"></i><i class="playkit-icon playkit-icon-minimize"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Fullscreen</span></div></div></div></div></div></div></div><div style="width: 286.44px; right: -286.44px; opacity: 0;" class="playkit-side-panel playkit-vertical-side-panel"><div class="playkit-side-panel-content"></div></div><div style="width: 286.44px; left: -286.44px; opacity: 0;" class="playkit-side-panel playkit-vertical-side-panel"><div class="playkit-side-panel-content"></div></div><div style="height: 161.123px; top: -161.123px; opacity: 0;" class="playkit-side-panel playkit-horizontal-side-panel"><div class="playkit-side-panel-content"></div></div><div style="height: 161.123px; bottom: -161.123px; opacity: 0;" class="playkit-side-panel playkit-horizontal-side-panel"><div class="playkit-side-panel-content"></div></div></div></div></div><script type="text/javascript">var kalturaPlayer = KalturaPlayer.setup({
+        targetId: 'djJ8MzIwMDI4M3zALh59e31Ad91DNE_aYIFPNlAKTgdQYec2MNkEw76zXvK83X94nQQp1xcMgvxplwfRgYpXIQLl4fl97rVf-iSrAkFK0zDHZJyudu_-uE4n9DUfQsO9bYsRSasL3_Ck2LzHH83v-sJVXRnCSBJ7UQ-S0RSBT-kG-Wv-zfnfVDHJOWyrDxqiraMnc1XrLbG_dBSavoIFHxbVM32lckwgpiallH0gREGBSH-IXkVq7JzDEezog-ANMh-wXQWGANq-3FwDrHZeNKptzMRwW0zMsNP4Y4i1zfyKt8ui-9B1Pdmh_mjRErjxLpGajCrSllFrFTg=',
+        provider: {
+          partnerId: '3200283',
+          uiConfId: '47254103',
+          ks: 'djJ8MzIwMDI4M3zALh59e31Ad91DNE_aYIFPNlAKTgdQYec2MNkEw76zXvK83X94nQQp1xcMgvxplwfRgYpXIQLl4fl97rVf-iSrAkFK0zDHZJyudu_-uE4n9DUfQsO9bYsRSasL3_Ck2LzHH83v-sJVXRnCSBJ7UQ-S0RSBT-kG-Wv-zfnfVDHJOWyrDxqiraMnc1XrLbG_dBSavoIFHxbVM32lckwgpiallH0gREGBSH-IXkVq7JzDEezog-ANMh-wXQWGANq-3FwDrHZeNKptzMRwW0zMsNP4Y4i1zfyKt8ui-9B1Pdmh_mjRErjxLpGajCrSllFrFTg='
+        },
+        playback: {
+          preload: 'auto',
+        },
+        session: {
+          userId: '1677186177669001vvYa'
+        },
+        ui: {
+          debug: true
+        },
+        plugins: {
+          undefined,
+          'kaltura-live': {
+            checkLiveWithKs: false,
+            isLiveInterval: 10
+          }
+        }
+      });
+      kalturaPlayer.loadMedia({entryId: '1_q1aqr1af'})</script></div><iframe data-test="pigeonhole-iframe" title="pigeonhole-iframe" class="pigeonhole-qanda" src="https://pigeonhole.at/C6TY9H-1677186177669001vvYa/i/4409514?disablebackbutton"></iframe></div></div>
+<div class="rf-video-player rf-kaltura-player"><script src="https://cdnapisec.kaltura.com/p/3200283/embedPlaykitJs/uiconf_id/47254103"></script><div id="djJ8MzIwMDI4M3zALh59e31Ad91DNE_aYIFPNlAKTgdQYec2MNkEw76zXvK83X94nQQp1xcMgvxplwfRgYpXIQLl4fl97rVf-iSrAkFK0zDHZJyudu_-uE4n9DUfQsO9bYsRSasL3_Ck2LzHH83v-sJVXRnCSBJ7UQ-S0RSBT-kG-Wv-zfnfVDHJOWyrDxqiraMnc1XrLbG_dBSavoIFHxbVM32lckwgpiallH0gREGBSH-IXkVq7JzDEezog-ANMh-wXQWGANq-3FwDrHZeNKptzMRwW0zMsNP4Y4i1zfyKt8ui-9B1Pdmh_mjRErjxLpGajCrSllFrFTg=" class="rf-player-inner"><div id="_68fid" class="kaltura-player-container" tabindex="-1"><div tabindex="0" aria-label="Video Player" class="playkit-player  playkit-Mac-OS playkit-Firefox playkit-hover playkit-metadata-loaded playkit-state-paused playkit-size-lg notranslate"><span></span><div id="_68fid-video" class="playkit-video-player" style="position: absolute; inset: 0px;"><div class="playkit-container" id="_k04f3" tabindex="-1"><video id="_proy4" class="playkit-engine playkit-engine-html5" playsinline="" src="blob:https://register.nvidia.com/d7eb5b47-8d5e-0149-8d28-0e959b6eb0ec"></video><div class="playkit-black-cover" style="visibility: hidden;"></div><div id="_epqca" tabindex="-1" class="playkit-poster" style="background-image: url(&quot;https://cfvod.kaltura.com/p/3200283/sp/320028300/thumbnail/entry_id/1_q1aqr1af/version/100011/height/488/width/868&quot;); display: none;"></div><div class="playkit-subtitles"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div id="playkit-bumper-container_k04f3" class="playkit-bumper-container" style="visibility: hidden;"><video></video><div class="playkit-bumper-cover"></div><a class="playkit-bumper-click-through" target="_blank"></a></div></div></div><div><div class="playkit-player-gui" id="player-gui"><div style="position: absolute; inset: 0px;" class="playkit-overlay-action "></div><div style="position: absolute; inset: 0px;" class="playkit-video-area"><div style="pointer-events: auto;"><div aria-live="polite" tabindex="-1" class="offline-slate__slate-wrapper___pobqn "></div></div></div><div style="position: absolute; inset: 0px;" class="playkit-gui-area"><div style="pointer-events: auto;"><div class="overlay-portal" aria-live="polite"></div><div class="playkit-playback-controls playkit-center-playback-controls"><div class="playkit-control-button-container playkit-control-play-pause"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Play" class="playkit-control-button"><div><i class="playkit-icon playkit-icon-play"></i><i class="playkit-icon playkit-icon-pause"></i></div></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Play</span></div></div></div></div><div class="playkit-top-bar"><div class="playkit-top-bar-area"></div><div class="playkit-left-controls"></div><div class="playkit-right-controls"></div></div><div class="playkit-interactive-area"><div style="pointer-events: auto;"></div></div><div class="playkit-bottom-bar playkit-line-break"><div class="playkit-bottom-bar-area"><div tabindex="0" class="playkit-seek-bar" role="slider" aria-label="Seek slider" aria-valuemin="0" aria-valuemax="2376" aria-valuenow="404" aria-valuetext="06:43 of 39:36"><div class="playkit-progress-bar"><div class="playkit-frame-preview" style="left: 778.499px;"><div style="height: 96px; width: 168px;" class="playkit-frame-preview-img-container playkit-non-sticky"><div class="playkit-frame-preview-img" style="background: rgba(0, 0, 0, 0) url(&quot;https://cfvod.kaltura.com/p/3200283/sp/320028300/thumbnail/entry_id/1_q1aqr1af/version/100011/width/164/vid_slices/100&quot;) repeat scroll -15252px 0px;"></div></div></div><div class="playkit-time-preview" style="left: 778.499px;">36:52</div><div class="playkit-buffered" style="width: 0%;"></div><div class="playkit-progress" style="width: 16.9918%;"><a class="playkit-scrubber"></a></div><div class="playkit-virtual-progress" style="width: 93.1219%;"><div class="playkit-virtual-progress-indicator"></div></div></div></div></div><div class="playkit-left-controls"><div class="playkit-playback-controls "><div class="playkit-control-button-container playkit-control-play-pause"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Play" class="playkit-control-button"><div><i class="playkit-icon playkit-icon-play"></i><i class="playkit-icon playkit-icon-pause"></i></div></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-right playkit-hide">Play</span></div></div></div><div class="playkit-control-button-container playkit-control-rewind playkit-no-idle-control"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Seek backwards" class="playkit-control-button"><i class="playkit-icon playkit-icon-rewind-10"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Seek backwards</span></div></div><div class="playkit-control-button-container playkit-control-forward playkit-no-idle-control"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Seek forward" class="playkit-control-button"><i class="playkit-icon playkit-icon-forward-10"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Seek forward</span></div></div><div class="playkit-time-display"><span>06:43 / 39:36</span></div></div><div class="playkit-right-controls"><div class="playkit-control-button-container playkit-control-volume playkit-volume-control" role="application"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-live="polite" aria-label="100% volume. Click to mute" class="playkit-control-button"><i class="playkit-icon playkit-icon-volume-base"></i><i class="playkit-icon playkit-icon-volume-waves"></i><i class="playkit-icon playkit-icon-volume-mute"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-left playkit-hide">Mute</span></div><div class="playkit-volume-control-bar" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-valuetext="100% volume "><div class="playkit-bar"><div class="playkit-progress" style="height: 100%;"></div></div></div></div><div class="playkit-control-button-container playkit-control-language"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-haspopup="true" aria-label="Language" class="playkit-control-button"><i class="playkit-icon playkit-icon-language"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Language</span></div><div></div></div><div class="playkit-control-button-container playkit-control-settings"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Settings" class="playkit-control-button playkit-button-badge playkit-badge-icon playkit-icon-quality-hd-active "><i class="playkit-icon playkit-icon-settings"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Settings</span></div></div><div class="playkit-control-button-container playkit-control-fullscreen"><div class="playkit-tooltip"><button type="button" tabindex="0" aria-label="Fullscreen" class="playkit-control-button"><i class="playkit-icon playkit-icon-maximize"></i><i class="playkit-icon playkit-icon-minimize"></i></button><span style="max-width: 240px;" class="playkit-tooltip-label playkit-tooltip-top playkit-hide">Fullscreen</span></div></div></div></div></div></div></div><div style="width: 286.44px; right: -286.44px; opacity: 0;" class="playkit-side-panel playkit-vertical-side-panel"><div class="playkit-side-panel-content"></div></div><div style="width: 286.44px; left: -286.44px; opacity: 0;" class="playkit-side-panel playkit-vertical-side-panel"><div class="playkit-side-panel-content"></div></div><div style="height: 161.123px; top: -161.123px; opacity: 0;" class="playkit-side-panel playkit-horizontal-side-panel"><div class="playkit-side-panel-content"></div></div><div style="height: 161.123px; bottom: -161.123px; opacity: 0;" class="playkit-side-panel playkit-horizontal-side-panel"><div class="playkit-side-panel-content"></div></div></div></div></div><script type="text/javascript">var kalturaPlayer = KalturaPlayer.setup({
+        targetId: 'djJ8MzIwMDI4M3zALh59e31Ad91DNE_aYIFPNlAKTgdQYec2MNkEw76zXvK83X94nQQp1xcMgvxplwfRgYpXIQLl4fl97rVf-iSrAkFK0zDHZJyudu_-uE4n9DUfQsO9bYsRSasL3_Ck2LzHH83v-sJVXRnCSBJ7UQ-S0RSBT-kG-Wv-zfnfVDHJOWyrDxqiraMnc1XrLbG_dBSavoIFHxbVM32lckwgpiallH0gREGBSH-IXkVq7JzDEezog-ANMh-wXQWGANq-3FwDrHZeNKptzMRwW0zMsNP4Y4i1zfyKt8ui-9B1Pdmh_mjRErjxLpGajCrSllFrFTg=',
+        provider: {
+          partnerId: '3200283',
+          uiConfId: '47254103',
+          ks: 'djJ8MzIwMDI4M3zALh59e31Ad91DNE_aYIFPNlAKTgdQYec2MNkEw76zXvK83X94nQQp1xcMgvxplwfRgYpXIQLl4fl97rVf-iSrAkFK0zDHZJyudu_-uE4n9DUfQsO9bYsRSasL3_Ck2LzHH83v-sJVXRnCSBJ7UQ-S0RSBT-kG-Wv-zfnfVDHJOWyrDxqiraMnc1XrLbG_dBSavoIFHxbVM32lckwgpiallH0gREGBSH-IXkVq7JzDEezog-ANMh-wXQWGANq-3FwDrHZeNKptzMRwW0zMsNP4Y4i1zfyKt8ui-9B1Pdmh_mjRErjxLpGajCrSllFrFTg='
+        },
+        playback: {
+          preload: 'auto',
+        },
+        session: {
+          userId: '1677186177669001vvYa'
+        },
+        ui: {
+          debug: true
+        },
+        plugins: {
+          undefined,
+          'kaltura-live': {
+            checkLiveWithKs: false,
+            isLiveInterval: 10
+          }
+        }
+      });
+      kalturaPlayer.loadMedia({entryId: '1_q1aqr1af'})</script></div>
+---
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t9xd0hBC_v8?start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<hr class="docutils" />
+<iframe data-test="pigeonhole-iframe" title="pigeonhole-iframe" class="pigeonhole-qanda" src="https://pigeonhole.at/C6TY9H-1677186177669001vvYa/i/4409514?disablebackbutton"></iframe>
+<hr class="docutils" />
+<iframe width="560" height="315" src="https://cdnapisec.kaltura.com/p/3200283/embedPlaykitJs/uiconf_id/47254103" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<hr class="docutils" />
+<hr class="docutils" />
+<p>Here we remove the height tag.</p>
+<div style ="display:block">
+<iframe src="https://onedrive.live.com/embed?cid=63413B86A87DF2B1&resid=63413B86A87DF2B1%218219&authkey=AMRFU0zq7UaCW90" width="320"frameborder="0" scrolling="no" allowfullscreen></iframe>
+</div>
+<hr class="docutils" />
+<p>Here we remove the height tag.</p>
+<div style ="display:block">
+<iframe src="https://onedrive.live.com/embed?cid=63413B86A87DF2B1&resid=63413B86A87DF2B1%218219&authkey=AMRFU0zq7UaCW90" width="640" height="522" frameborder="0" scrolling="no" allowfullscreen></iframe>
+</div>
+<hr class="docutils" />
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Parameter: &#39;Webshare&#39;
+:::{card} Skycaptain vs. Emulsion
+
+&lt;iframe width=&quot;280&quot; height=&quot;145&quot; src=&quot;https://www.youtube.com/embed/t9xd0hBC_v8?start=14&quot; title=&quot;YouTube video player&quot; frameborder=&quot;2&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;
+:::
+</pre></div>
+</div>
+<p>:::{card} Skycaptain vs. Emulsion</p>
+<iframe width="280" height="145" src="https://www.youtube.com/embed/t9xd0hBC_v8?start=14" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>:::</p>
+<hr class="docutils" />
+<p>Embed with modest branding set to true.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;iframe width=&quot;200&quot; height=&quot;113&quot; src=&quot;https://www.youtube.com/embed/lFtEMg86lJc?start=74&amp;modestbranding=1&amp;rel=0&quot; title=&quot;Simready video&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</pre></div>
+</div>
+<iframe width="200" height="113" src="https://www.youtube.com/embed/lFtEMg86lJc?start=74&modestbranding=1&rel=0" title="Simready video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<hr class="docutils" />
+<p>ChatGPT suggested embed code for yt at a particular time:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[![Video thumbnail](https://img.youtube.com/vi/t9xd0hBC_v8/0.jpg)](https://youtu.be/t9xd0hBC_v8?t=64 &quot;Click to watch the video at 1:04&quot;)
+</pre></div>
+</div>
+<p><a class="reference external" href="https://youtu.be/t9xd0hBC_v8?t=64" title="Click to watch the video at 1:04"><img alt="Video thumbnail" src="https://img.youtube.com/vi/t9xd0hBC_v8/0.jpg" /></a></p>
+<hr class="docutils" />
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>Video Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1:04</p></td>
+<td><p><a class="reference external" href="https://youtu.be/t9xd0hBC_v8?t=64">https://youtu.be/t9xd0hBC_v8?t=64</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>Video Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1:04</p></td>
+<td><p><a class="reference external" href="https://youtu.be/t9xd0hBC_v8?t=64" title="1:04">Watch video</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>Video Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1:04</p></td>
+<td><p><a class="reference external" href="https://youtu.be/t9xd0hBC_v8?t=64" title="Time: 1:04">https://youtu.be/t9xd0hBC_v8?t=64</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<div class="warning admonition">
+<p class="admonition-title">Horizontal Rule post video embed</p>
+<p>Be sure to add a Horizontal Rule after the ‘/div’ for a video embed.</p>
+</div>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>From Onedrive, the video can be doubled in size and over written by the height and width parameters.</p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="embed-giphy">
+<h2>Embed Giphy<a class="headerlink" href="#embed-giphy" title="Link to this heading"></a></h2>
+<div style ="display:block">
+<iframe src="https://giphy.com/embed/3o84U5xPhrn42WgBJC" width="480" height="282" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<p>
+<a href="https://giphy.com/gifs/foxhomeent-office-space-milton-3o84U5xPhrn42WgBJC">via GIPHY</a>
+</p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="links">
+<h2>Links<a class="headerlink" href="#links" title="Link to this heading"></a></h2>
+<section id="external-url">
+<h3>External Url.<a class="headerlink" href="#external-url" title="Link to this heading"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[alt-text](url address)
+[myst-parser](https://myst-parser.readthedocs.io/en/v0.17.1/syntax/optional.html#syntax-header-anchors)
+</pre></div>
+</div>
+<p>We have installed myst-parser via documentation directions
+<a class="reference external" href="https://myst-parser.readthedocs.io/en/v0.17.1/syntax/optional.html#syntax-header-anchors">myst-parser</a></p>
+</section>
+<section id="link-to-another-section-in-the-same-page">
+<h3>Link to Another Section in the Same Page.<a class="headerlink" href="#link-to-another-section-in-the-same-page" title="Link to this heading"></a></h3>
+<p>This allows us to use:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[some header](header-label)
+
+[link will take us to the Note Header](Table)
+</pre></div>
+</div>
+<p>Clicking on the <a class="reference internal" href="#table"><span class="std std-ref">link will take us to the Table Header</span></a></p>
+<p>Another page that is .rst instead of Markdown.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[credit.rst](credit.rst)
+</pre></div>
+</div>
+</section>
+<section id="link-to-another-section-of-another-page">
+<h3>Link to Another Section of Another page.<a class="headerlink" href="#link-to-another-section-of-another-page" title="Link to this heading"></a></h3>
+<p>These are called explicit targets.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(My_target)=
+## Explicit targets
+
+Reference [](My_target). 
+</pre></div>
+</div>
+<p>Add ‘<strong>(My_Target)=</strong>’<br />
+to the header on the target page.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ ](My_target)
+</pre></div>
+</div>
+<p><a class="reference external" href="https://docs.readthedocs.io/en/stable/guides/cross-referencing-with-sphinx.html#my-target">Explicit References documentation</a></p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="table">
+<h2>Table<a class="headerlink" href="#table" title="Link to this heading"></a></h2>
+<p>:::{note}
+This text is <strong>standard</strong> <em>Markdown</em>
+:::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>:::{table} This is a **standard** _Markdown_ title
+:align: center
+:widths: grid
+
+abc | mnp | xyz
+--- | --- | ---
+123 | 456 | 789
+:::
+</pre></div>
+</div>
+<p>:::{table} This is a <strong>standard</strong> <em>Markdown</em> title
+:align: center
+:widths: grid</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>abc</p></th>
+<th class="head"><p>mnp</p></th>
+<th class="head"><p>xyz</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>123</p></td>
+<td><p>456</p></td>
+<td><p>789</p></td>
+</tr>
+<tr class="row-odd"><td><p>:::</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</section>
+<section id="task-lists">
+<h2>Task Lists<a class="headerlink" href="#task-lists" title="Link to this heading"></a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- [ ] An item that needs doing
+- [x] An item that is complete
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>[ ] An item that needs doing</p></li>
+<li><p>[x] An item that is complete</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="html-tags">
+<h2>Html Tags<a class="headerlink" href="#html-tags" title="Link to this heading"></a></h2>
+<p><strong>BOLD</strong></p>
+<p>To create bold text in HTML, you can use the <strong> or <b> tags.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;p&gt;This is &lt;strong&gt;bold text&lt;/strong&gt;.&lt;/p&gt;
+</pre></div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="classes">
+<span id="a-classes"></span><h2>Classes<a class="headerlink" href="#classes" title="Link to this heading"></a></h2>
+<p><img alt="No Spaces" src="_images/Spaces_No-Spaces.png" /></p>
+</section>
+<section id="multiple-size-headings">
+<span id="id1"></span><h2>Multiple Size Headings<a class="headerlink" href="#multiple-size-headings" title="Link to this heading"></a></h2>
+<p>These are examples of different size headings.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>h1: #, h2: ##, h3: ###, h4: ####, h5: #####, h6: ######
+</pre></div>
+</div>
+<p>::::{important}</p>
+<p>In MyST/Sphinx Navigation Panel:</p>
+<p>Headings that appear in the navigation panel must be part of the document section hierarchy.</p>
+<p>If you place a heading after another section of the same or higher level without proper hierarchy, Sphinx may treat it as “out of section” and it won’t get a ToC entry.</p>
+<p>::::</p>
+</section>
+</section>
+<section id="heading-1">
+<h1>Heading 1<a class="headerlink" href="#heading-1" title="Link to this heading"></a></h1>
+<section id="heading-2">
+<h2>Heading 2<a class="headerlink" href="#heading-2" title="Link to this heading"></a></h2>
+<section id="heading-3">
+<h3>Heading 3<a class="headerlink" href="#heading-3" title="Link to this heading"></a></h3>
+<section id="heading-4">
+<h4>Heading 4<a class="headerlink" href="#heading-4" title="Link to this heading"></a></h4>
+<section id="heading-5">
+<h5>Heading 5<a class="headerlink" href="#heading-5" title="Link to this heading"></a></h5>
+<section id="heading-6">
+<h6>Heading 6<a class="headerlink" href="#heading-6" title="Link to this heading"></a></h6>
+</section>
+</section>
+</section>
+<section id="id2">
+<h4>Heading 2<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
+<hr class="docutils" />
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="addSSH.html" class="btn btn-neutral float-left" title="Add SSH Key to Github" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="myst-nb.html" class="btn btn-neutral float-right" title="Myst-NB (Jupyter Notebooks)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, USD Study Group..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

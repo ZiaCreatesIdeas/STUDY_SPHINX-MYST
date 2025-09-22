@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Install Sphinx and Myst &mdash; STUDY SPHINX 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Add SSH Key to Github" href="addSSH.html" />
+    <link rel="prev" title="Specifications" href="specifications.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            STUDY SPHINX
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="specifications.html">Specifications</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Install Sphinx and Myst</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#build">Build</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="addSSH.html">Add SSH Key to Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learn_myst.html">Learn Myst Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learn_myst.html#heading-1">Heading 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="myst-nb.html">Myst-NB (Jupyter Notebooks)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html">LEARNING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html#header-sizes">Header Sizes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html#sample-h3">Sample H3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html#ie-header">ie. HEADER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html#links">Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credit.html">Credit &amp; inspiration</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">STUDY SPHINX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Install Sphinx and Myst</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="install-sphinx-and-myst">
+<span id="installation"></span><span id="steps-needed"></span><h1>Install Sphinx and Myst<a class="headerlink" href="#install-sphinx-and-myst" title="Link to this heading"></a></h1>
+<p>To deploy this guide from <a class="reference external" href="https://coderefinery.github.io/documentation/gh_workflow/">coderrefinery</a> , follow these steps…</p>
+<p><strong>A. Install Sphinx.</strong></p>
+<p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/installation.html">sphinx-doc.org</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Win</span><span class="p">:</span> <span class="n">pip</span> <span class="n">intall</span> <span class="o">-</span><span class="n">U</span> <span class="n">sphinx</span>
+<span class="n">Linux</span><span class="p">:</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">sphinx</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Mac</span> <span class="p">(</span><span class="n">MiniConda</span><span class="p">):</span>
+  <span class="n">curl</span> <span class="o">-</span><span class="n">O</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">repo</span><span class="o">.</span><span class="n">anaconda</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">miniconda</span><span class="o">/</span><span class="n">Miniconda3</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">MacOSX</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
+  <span class="n">bash</span> <span class="n">Miniconda3</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">MacOSX</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
+
+<span class="n">Test</span> <span class="n">Environment</span><span class="p">:</span>
+  <span class="n">conda</span> <span class="n">info</span> <span class="o">--</span><span class="n">envs</span>
+  <span class="n">conda</span> <span class="n">env</span> <span class="nb">list</span>
+
+<span class="n">Turn</span> <span class="n">Conda</span> <span class="n">Off</span> <span class="o">/</span> <span class="n">On</span><span class="p">:</span>
+  <span class="n">conda</span> <span class="n">deactivate</span>
+  <span class="n">conda</span> <span class="n">activate</span>
+
+<span class="n">Create</span> <span class="n">Environment</span><span class="p">:</span>
+  <span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">Sphinx</span>
+  <span class="n">condo</span> <span class="n">activate</span> <span class="n">Sphinx</span>
+
+<span class="n">Install</span> <span class="n">Sphinx</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Conda</span><span class="o">-</span><span class="n">Forge</span><span class="p">:</span>
+  <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">sphinx</span>
+  <span class="n">conda</span> <span class="nb">list</span> <span class="o">-</span><span class="n">n</span> <span class="n">sphinx</span>
+
+<span class="n">Install</span> <span class="n">Sphinx</span> <span class="n">Conda</span> <span class="n">Packages</span><span class="p">:</span>
+  <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">sphinx</span> <span class="n">sphinx_rtd_theme</span> <span class="n">sphinx_copybutton</span> <span class="n">myst_parser</span> <span class="n">sphinx_design</span> <span class="n">myst</span><span class="o">-</span><span class="n">nb</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">tabs</span>
+
+  <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_rtd_theme</span>
+  <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_copybutton</span>
+  <span class="n">pip</span> <span class="n">install</span> <span class="n">myst_parser</span>
+  <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_design</span>
+  <span class="n">pip</span> <span class="n">install</span> <span class="n">myst</span><span class="o">-</span><span class="n">nb</span>
+  <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">tabs</span>
+</pre></div>
+</div>
+<p>Check version:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p><strong>1. Install support packages from terminal.</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_rtd_theme</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_copybutton</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">myst_parser</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_design</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">myst</span><span class="o">-</span><span class="n">nb</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">tabs</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">- <strong>Sphinx_rtd_theme</strong> is the current blue and yellow theme provided by ‘ReadtheDocs’.</div>
+<div class="line">- <strong>Copybutton</strong> allows us to copy code from code blocks.</div>
+<div class="line">- <strong>Myst_parser</strong> allows us to use markdown instead of rst.</div>
+<div class="line-block">
+<div class="line">Myst parser comes with its own extensions, such as ‘Code’ and ‘Colon Fence’ for Admonitions.</div>
+</div>
+<div class="line">- <strong>Sphinx_design</strong> allow for use of grids and cards in a document.</div>
+<div class="line">- <strong>Myst_NB</strong> allows for integration of Jupyter Notebook <a class="reference external" href="https://myst-nb.readthedocs.io/en/v0.9.0/use/start.html">Myst-nb</a></div>
+<div class="line">- <strong>Sphinx-tabs</strong> is useful for allowing virtual tabs within a page (ie. Linux | win | Mac).</div>
+</div>
+<ol class="upperalpha simple" start="2">
+<li><p>Install Pycharm or VSCode to view .rst files and to create .md markdown files.</p></li>
+</ol>
+<div class="line-block">
+<div class="line"><strong>2.</strong> Modify <strong>CONF.PY</strong></div>
+<div class="line-block">
+<div class="line">2a. After generating the template, in Conf.py, set the language.</div>
+</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">language</span> <span class="o">=</span> <span class="n">en</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>2b.</strong> Modify <strong>conf.py</strong>, look for <strong>‘html_theme’</strong> and add:</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+</pre></div>
+</div>
+<img alt="_images/change_theme.png" src="_images/change_theme.png" />
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><strong>2c.</strong></div>
+<div class="line">Look for:</div>
+<div class="line">‘# – General configuration ————————————————’</div>
+<div class="line">and enable all pip installed extensions.</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+              <span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx_copybutton&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.autosectionlabel&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;myst_parser&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx_design&#39;</span>
+              <span class="s1">&#39;sphinx-tabs&#39;</span>
+             <span class="p">]</span>
+
+<span class="n">myst_enable_extensions</span> <span class="o">=</span> <span class="p">[</span>
+                          <span class="s2">&quot;colon_fence&quot;</span><span class="p">,</span>
+                          <span class="s2">&quot;html_image&quot;</span>
+                         <span class="p">]</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>4c. Seperately, enable myst extensions, as shown above.</strong></div>
+</div>
+<p><strong>4. Add and Update .yml file for gitpages.</strong></p>
+<div class="line-block">
+<div class="line">Create a workflow/yaml file. This can be done in our repo using the ‘add’ file button.</div>
+<div class="line">or we can do so locally.</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">github</span><span class="o">/</span><span class="n">workflows</span><span class="o">/</span><span class="n">docmentation</span><span class="o">.</span><span class="n">yaml</span>
+</pre></div>
+</div>
+<img alt="_images/workflow-yaml.png" src="_images/workflow-yaml.png" />
+<p>The contents of the yaml file must include commands to install the extensions.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">name</span><span class="p">:</span> <span class="n">Docs</span>
+<span class="n">on</span><span class="p">:</span> <span class="p">[</span><span class="n">push</span><span class="p">,</span> <span class="n">pull_request</span><span class="p">,</span> <span class="n">workflow_dispatch</span><span class="p">]</span>
+<span class="n">permissions</span><span class="p">:</span>
+    <span class="n">contents</span><span class="p">:</span> <span class="n">write</span>
+<span class="n">jobs</span><span class="p">:</span>
+  <span class="n">docs</span><span class="p">:</span>
+    <span class="n">runs</span><span class="o">-</span><span class="n">on</span><span class="p">:</span> <span class="n">ubuntu</span><span class="o">-</span><span class="n">latest</span>
+    <span class="n">steps</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">uses</span><span class="p">:</span> <span class="n">actions</span><span class="o">/</span><span class="n">checkout</span><span class="nd">@v3</span>
+      <span class="o">-</span> <span class="n">uses</span><span class="p">:</span> <span class="n">actions</span><span class="o">/</span><span class="n">setup</span><span class="o">-</span><span class="n">python</span><span class="nd">@v3</span>
+      <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">Install</span> <span class="n">dependencies</span>
+        <span class="n">run</span><span class="p">:</span> <span class="o">|</span>
+          <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span> <span class="n">sphinx_rtd_theme</span>
+          <span class="n">pip</span> <span class="n">install</span> <span class="n">myst</span><span class="o">-</span><span class="n">parser</span>
+          <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_copybutton</span>
+          <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_design</span>
+      <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">Sphinx</span> <span class="n">build</span>
+        <span class="n">run</span><span class="p">:</span> <span class="o">|</span>
+          <span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="n">doc</span> <span class="n">_build</span>
+      <span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">Deploy</span>
+        <span class="n">uses</span><span class="p">:</span> <span class="n">peaceiris</span><span class="o">/</span><span class="n">actions</span><span class="o">-</span><span class="n">gh</span><span class="o">-</span><span class="n">pages</span><span class="nd">@v3</span>
+        <span class="k">if</span><span class="p">:</span> <span class="err">$</span><span class="p">{{</span> <span class="n">github</span><span class="o">.</span><span class="n">event_name</span> <span class="o">==</span> <span class="s1">&#39;push&#39;</span> <span class="o">&amp;&amp;</span> <span class="n">github</span><span class="o">.</span><span class="n">ref</span> <span class="o">==</span> <span class="s1">&#39;refs/heads/main&#39;</span> <span class="p">}}</span>
+        <span class="k">with</span><span class="p">:</span>
+          <span class="n">publish_branch</span><span class="p">:</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+          <span class="n">github_token</span><span class="p">:</span> <span class="err">$</span><span class="p">{{</span> <span class="n">secrets</span><span class="o">.</span><span class="n">GITHUB_TOKEN</span> <span class="p">}}</span>
+          <span class="n">publish_dir</span><span class="p">:</span> <span class="n">_build</span><span class="o">/</span>
+          <span class="n">force_orphan</span><span class="p">:</span> <span class="n">true</span>
+</pre></div>
+</div>
+<p>Above, we see that there is a ‘pip install extension’ command for every extension we deploy.</p>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">The above yaml file will respond to a push event to git and use workflows &gt; Actions to create a gh-branch.</div>
+<div class="line">Once that branch is created, we go to Settings &gt; Pages and set the repo to ‘gh-pages’.</div>
+</div>
+<iframe src="https://onedrive.live.com/embed?cid=63413B86A87DF2B1&resid=63413B86A87DF2B1%218269&authkey=ANrxfVm_WKYfnSI" width="640" height="406" frameborder="0" scrolling="no" allowfullscreen></iframe><div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Warning:
+Mac Machines hide files starting with ‘.’</p>
+</div>
+<p>To make the invisible, visible, enter the following into the terminal.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Type</span> <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">Finder</span> <span class="n">AppleShowAllFiles</span> <span class="n">true</span>
+<span class="n">Type</span> <span class="n">killall</span> <span class="n">Finder</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<section id="build">
+<h2>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h2>
+<p>This is the command to build using Coderefinery’s setup.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="n">doc</span> <span class="n">_build</span>
+</pre></div>
+</div>
+<p>We can use auto build to detect changes in code and trigger the build cycle on saving.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">spinx</span><span class="o">-</span><span class="n">autobuild</span>
+<span class="ow">or</span> <span class="k">if</span> <span class="n">using</span> <span class="n">python3</span><span class="p">:</span>
+<span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">autobuild</span>
+<span class="n">Run</span> <span class="n">using</span><span class="p">:</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">autobuild</span> <span class="n">doc</span> <span class="n">_build</span>
+<span class="n">Point</span> <span class="n">Browser</span> <span class="n">at</span><span class="p">:</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">8000</span>
+<span class="n">Changes</span> <span class="n">will</span> <span class="n">be</span> <span class="n">autoloaded</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">browser</span> <span class="n">upon</span> <span class="n">completion</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Test HTML pages TEST links</strong></p>
+<p>Inside the cloned repository, check the integrity of all internal and external links:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">build</span> <span class="n">doc</span> <span class="o">-</span><span class="n">W</span> <span class="o">-</span><span class="n">b</span> <span class="n">linkcheck</span> <span class="o">-</span><span class="n">d</span> <span class="n">_build</span><span class="o">/</span><span class="n">doctrees</span> <span class="n">_build</span><span class="o">/</span><span class="n">html</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="specifications.html" class="btn btn-neutral float-left" title="Specifications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="addSSH.html" class="btn btn-neutral float-right" title="Add SSH Key to Github" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, USD Study Group..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
