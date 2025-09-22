@@ -44,10 +44,13 @@ To deploy this guide from `coderrefinery <https://coderefinery.github.io/documen
     Install Sphinx Conda Packages:
       conda install -c conda-forge sphinx sphinx_rtd_theme sphinx_copybutton myst_parser sphinx_design myst-nb sphinx-tabs
 
+      pip install sphinx_rtd_theme
+      pip install sphinx_copybutton
+      pip install myst_parser
+      pip install sphinx_design
+      pip install myst-nb
+      pip install sphinx-tabs
      
-
-
-
 
 
 Check version:
@@ -65,7 +68,7 @@ Check version:
    pip install sphinx_copybutton
    pip install myst_parser
    pip install sphinx_design
-   pip install pip install myst-nb
+   pip install myst-nb
    pip install sphinx-tabs
 
 | - **Sphinx_rtd_theme** is the current blue and yellow theme provided by 'ReadtheDocs'.
